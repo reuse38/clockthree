@@ -11,3 +11,136 @@ Outline
   * [Components]
   * [LEDs]
   * [Enclosure]
+
+
+-------------------------------------------
+
+each step:
+parts
+tools
+prcedure
+photo
+
+Tips:
+Take breaks often.  Fatigue will increase the possibility that you will make a 
+mistake.
+
+Soldering: We assume that this is NOT your first soldering project.  If it is,
+we'd suggest getting a cheap learn to solder kit to get started.  If this is 
+your first project in a while, here is a quick refresher on soldering.
+The main thing is to double and triple check the part is the is in the 
+correct place with the correct orientation (if applicatble).  While desoldering
+is possible, it is troublesome and time consuming and risky.  Make it a goal
+that you will not have to desolder in the coarse of making a clock.
+
+After each step, evaluate the solder joints from the front and back of the 
+board.  On the back, the solder should be shiny and make a volcano shape 
+as opposed to a dome shape.
+On the front, you should see that the solder came all the way trough the board.
+
+If you do make a mistake, don't panic.  Use a solder sucker to remove the 
+solder and pull the piece gingerly while applying heat.  If you damage
+a trace in the process of desoldering, send a picutre of the damaged area and
+we will help you make the most of the situation.  It may be possible to 
+"blue wire" around the damage.
+
+CPU Support:
+Solder the CPU support hardware from lowest profile part to highest.  
+That way when the board is flipped over, the parts are pushed flush against
+the board.
+
+STEP1: Start by soldering the resistors.  The orientation (polarity) does
+not matter.
+
+Parts
+R22 10K brown-black-orange
+R31 10K 
+R17 10K 
+R18 10K 
+R19 10K 
+R23 10K 
+
+R25 1K brown-black-red
+R26 1K
+
+R20 4K7 yellow-violet-red
+R21 4K7
+
+R33 680 blue-grey-brown
+
+R30 100 brown-black-brown
+
+U5 jumper (zero ohm resistor):  There is a spot on the circuit board for a 
+voltage regulator: U5 7805.  Since we use a 5 volt wall wart this part is 
+unnecessary.  You will jumper over this part by soldering in a small wire
+between pin locations 1 and 3 (the outside holes).  We used a scrap resistor
+lead.
+
+Step 2 Diodes.  The next tallest parts are the diodes: D1 and D3. Orintation 
+does matter on these so be careful! The positive lead of a diode is called the
+anode and the negative lead is called the cathode.  A stripe indicates the 
+cathode lead and must correlate to the stripe on the board.
+
+D1 1N4148:  This is a fast switching diode for the DBG led.  This diode looks
+like a browm glass bead with a black strip on one end indecating the cathod.
+Make sure this strip is aligned with the white stripe on the PCB.
+
+D3 1N4007: This diode protects the circuit from a reverse polarity power
+supply.  The cathode is indicated with a white stripe on the part and on
+the PCB.  Double check aligment before soldering.
+
+Step 3 small caps: These come is two styles, brown ceramic labeled 104
+and white plastic labled 1J100.
+Polarity is does not matter on these parts.
+C3 100nF
+C6 100nF
+C7 100nF
+C9 100nF
+
+Step 4 Sockets:  All of the large ICs have sockets.  This avoids the risk
+of having to desolder an IC (ick) and also eliminates the possibilty of
+overheating the IC.  Technically speaking polarity does not matter with
+these parts.  There is however a preferred orienation.  The small notch
+on one end indicates the pin 1 slot for the IC.  The correct orientation
+will will reinforce the correct orietation when you insert the IC.
+
+U1 12x2 pin wide (600 mils)
+U2 12x2 pin wide (600 mils)
+U4 12x2 pin wide (600 mils)
+
+U3 14x2 pin skinny (300 mils)
+
+Step 5 Right angle buttons: These buttons pop into place with a small 
+sqeeze on the back pins.
+Sw1
+Sw2
+Sw3
+Sw4
+Sw5
+
+
+Step 6 Speaker: The polarity matters on the speaker.  The plus sign on
+the speaker must coincide with the plus sign on the board.  The board will 
+accomodate two different speaker pin spacings.  Use the bottom pin and either 
+of the top two pins, whichever is a better fit.
+
+SP1
+
+Step 7 Power Jack: Only fits one way.
+J1 V_IN
+
+Step 8 Power LED.  Use any color you like.  A red led is included in
+the kits.  Polarity matters.  The long lead is the anode, the short lead
+is the cathode.  The flat side on the silk screen image and LED indicate the
+cathode (short lead).  
+You can do a mini-smoke test after this LED is installed.  
+Power up the board by plugging in the wall wart into J1.  The LED should
+light.  If not check the connectivity of all components in the power LED
+circuit.
+J1+ -> D3 -> U5 jumper -> R25 -> D4 -> J1-
+
+Step 8 16 MHz. resonator: Polarity does not matter.  This is a small 
+three-pin part is either blue or brown.  Solder in in either orientation.
+X1
+
+Step 
