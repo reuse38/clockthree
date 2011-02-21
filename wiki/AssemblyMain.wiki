@@ -59,10 +59,13 @@ the following link points to the [https://lh5.googleusercontent.com/_okbbAZsA5NQ
 
 
 U5 jumper (zero ohm resistor):  There is a spot on the circuit board for a voltage regulator: U5 7805.  Since we use a 5 volt wall wart this part is unnecessary.  You will jumper over this part by soldering in a small wire between pin locations 1 and 3 (the outside holes).  We used a scrap resistor lead.
+
+D1 jumper (zero ohm resistor):  This diode slot is to protect against reverse polarity power supplies, but comes at the expense of a fraction of a volt.  If you use the included 5V power supply, this diode is not used.  If you are using a higher voltage supply with the 7805 regulator, then please use this diode as the fraction of a volt cost is unimportant with a higher voltage supply.
+
 ----
 *STEP 2*
 
-DIODES : Next, install the diodes. Orientation does matter on these so be careful! The positive lead of a diode is called the anode and the negative lead is called the cathode.  A stripe indicates the cathode lead and must correlate to the stripe on the board.
+DIODES : Next, install the DBG control diode. Orientation does matter on this part so be careful! The positive lead of a diode is called the anode and the negative lead is called the cathode.  A stripe indicates the cathode lead and must correlate to the stripe on the board.
 
 _Parts_
 
@@ -71,6 +74,13 @@ D1 1N4148:  This is a fast switching diode for the DBG led.  This diode looks li
 D3 1N4007:  This diode is not used when ClockTHREE is powered using the supplied 5V Wall Wart. This was intended as a polarity protection diode in case of a wrongly connected (reverse) input supply. Connect a jumper / zero ohm resistor instead.
 ----
 *STEP 3*
+
+FTDI Header: This right angle header has a low profile and is easiest to solder before the taller parts are in.
+
+_Parts_
+  * P7 : 6 way male header, right angle, FTDI
+ 
+*STEP 4*
 
 SMALL CAPACITORS : These come is two styles, brown ceramic labeled 104 and white plastic labeled 1J100.  Polarity does not matter on these parts.
 
@@ -81,7 +91,7 @@ _Parts_
   * C7 100nF
   * C9 100nF
 ----
-*STEP 4*
+*STEP 5*
 
 IC SOCKETS :  All of the large ICs have sockets.  This avoids the risk of having to de-solder an IC (ick) and also eliminates the possibility of overheating the IC. Technically speaking polarity does not matter with the sockets (although the IC's themselves have polarity). There is however a preferred orienation.  The small notch on one end indicates the pin 1 slot for the IC.  The correct orientation will reinforce the correct orientation when you insert the IC.
 
@@ -92,7 +102,7 @@ _Parts_
   * U4 12x2 pin wide (600 mils) : Column Driver, 74HC154
   * U3 14x2 pin skinny (300 mils) : CPU, ATMega
 ----
-*STEP 5*
+*STEP 6*
 
 BUTTONS, RIGHT ANGLED : These buttons pop into place with a small squeeze on the back pins.
 
@@ -104,7 +114,7 @@ _Parts_
   * Sw4 : Reset
   * Sw5 : Enter
 ----
-*STEP 6*
+*STEP 7*
 
 SPEAKER : The polarity matters on the speaker.  The plus sign on the speaker must coincide with the plus sign on the board.  The board will accommodate two different speaker pin spacings.  Use the bottom pin and either of the top two pins, whichever is a better fit.
 
@@ -112,7 +122,7 @@ _Parts_
 
   * SP1
 ----
-*STEP 7*
+*STEP 8*
 
 POWER JACK : Only fits one way.
 
@@ -120,7 +130,7 @@ _Parts_
 
   * J1 V_IN
 ----
-*STEP 8*
+*STEP 9*
 
 LED's :  Use any color you like.  One each of red and Blue LED is included in the kits.  Polarity matters.  The long lead is the anode, the short lead is the cathode.  The flat side on the silk screen image and LED indicate the cathode (short lead).
 
@@ -135,7 +145,7 @@ Power up the board by plugging in the wall wart into J1.  The LED should light. 
 
 J1+ -> D3 -> U5 jumper -> 'R25' -> D4 -> J1-
 ----
-*STEP 9*
+*STEP 10*
 
 RESONATOR, 16 MHz : Polarity does not matter.  This is a small three-pin part in either blue or brown.  Solder in either orientation.
 
@@ -143,7 +153,7 @@ _Parts_
 
   * X1
 ----
-*STEP 10*
+*STEP 11*
 
 HEADERS and SOCKETS : There are several of these around the board.
 
@@ -152,11 +162,10 @@ _Parts_
   * CD1 : 4 way male header, straight, rtcBoB
   * CD2 : 4 way male header, straight, rtcBoB
   * K1 : 3 way male header, straight, PWR_SEL
-  * P7 : 6 way male header, right angle, FTDI
   * K2 : 3 way male header, straight, LED_ENABLE
   * R32 : 2 way female socket, straight, LDR
 ----
-*STEP 11*
+*STEP 12*
 
 ELECTROLYTIC CAPACITOR : These are polarized capacitors. The negative terminal of the component is marked, and also has a shorter lead.
 
@@ -164,7 +173,7 @@ _Parts_
 
   * C8, 100uF, 16V / 63V
 ----
-*STEP 12*
+*STEP 13*
 
 TRANSISTOR : These are polarized too. You need to spread out the leads to install it.
 
