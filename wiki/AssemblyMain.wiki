@@ -31,7 +31,7 @@ each step:
 Solder the CPU support hardware from lowest profile part to highest.  
 That way when the board is flipped over, the parts are pushed flush against the board.
 
-STEP1: Start by soldering the resistors. The orientation (polarity) does not matter.
+STEP1: Start by soldering the resistors. The polarity (orientation) does not matter.
 
 Parts
 
