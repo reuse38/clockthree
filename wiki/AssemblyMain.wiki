@@ -85,10 +85,6 @@ D1 1N4148:  This is a fast switching diode for the DBG led.  This diode looks
 like a browm glass bead with a black strip on one end indecating the cathod.
 Make sure this strip is aligned with the white stripe on the PCB.
 
-D3 1N4007: This diode protects the circuit from a reverse polarity power
-supply.  The cathode is indicated with a white stripe on the part and on
-the PCB.  Double check aligment before soldering.
-
 Step 3 small caps: These come is two styles, brown ceramic labeled 104
 and white plastic labled 1J100.
 Polarity is does not matter on these parts.
