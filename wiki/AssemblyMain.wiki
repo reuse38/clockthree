@@ -27,7 +27,7 @@ each step:
     * We assume that this is NOT your first soldering project.  If it is, we'd suggest getting a cheap learn to solder kit to get started.  If this is your first project in a while, here is a quick refresher on soldering.  The main thing is to double and triple check the part is the is in the correct place with the correct orientation (if applicable).  While de-soldering is possible, it is troublesome and time consuming and risky.  Make it a goal that you will not have to de-solder in the course of making a clock.
     * After each step, evaluate the solder joints from the front and back of the board.  On the back, the solder should be shiny and make a volcano shape as opposed to a dome shape. On the front, you should see that the solder came all the way trough the board. If you do make a mistake, don't panic.  Use a solder sucker to remove the solder and pull the piece gingerly while applying heat.  If you damage a trace in the process of de-soldering, send a picture of the damaged area and we will help you make the most of the situation.  It may be possible to "blue wire" around the damage.
 
-=CPU Support(everything but the LED array):=
+=CPU Support (everything but the LED array):=
 Solder the CPU support hardware from lowest profile part to highest.  
 That way when the board is flipped over, the parts are pushed flush against the board.
 
