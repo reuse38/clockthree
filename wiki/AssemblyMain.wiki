@@ -34,12 +34,12 @@ That way when the board is flipped over, the parts are pushed flush against the 
 STEP1: Start by soldering the resistors. The orientation (polarity) does not matter.
 
 Parts
-R22 10K brown-black-orange
-R31 10K
-R17 10K
-R18 10K
-R19 10K
-R23 10K 
+  * R22 10K brown-black-orange
+  * R31 10K
+  * R17 10K
+  * R18 10K
+  * R19 10K
+  * R23 10K 
 
 R25 1K brown-black-red
 R26 1K
