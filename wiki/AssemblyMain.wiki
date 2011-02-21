@@ -24,10 +24,11 @@ each step:
     * We assume that this is NOT your first soldering project.  If it is, we'd suggest getting a cheap learn to solder kit to get started.  If this is your first project in a while, here is a quick refresher on soldering.  The main thing is to double and triple check the part is the is in the correct place with the correct orientation (if applicable).  While de-soldering is possible, it is troublesome and time consuming and risky.  Make it a goal that you will not have to de-solder in the course of making a clock.
     * After each step, evaluate the solder joints from the front and back of the board.  On the back, the solder should be shiny and make a volcano shape as opposed to a dome shape. On the front, you should see that the solder came all the way trough the board. If you do make a mistake, don't panic.  Use a solder sucker to remove the solder and pull the piece gingerly while applying heat.  If you damage a trace in the process of de-soldering, send a picture of the damaged area and we will help you make the most of the situation.  It may be possible to "blue wire" around the damage.
     * The following parts will NOT be installed (not required)
-      * CD3
-      * P41
-      * P42
-      * ISP
+      * CD3, rtcBoB breakout header
+      * P41, STACK_L
+      * P42, STACK_R
+      * P13, ISP
+      * P12, V_OUT
       * Proto Area - left out for future experiments
 
 ----
@@ -86,10 +87,10 @@ IC SOCKETS :  All of the large ICs have sockets.  This avoids the risk of having
 
 _Parts_
 
-  * U1 12x2 pin wide (600 mils)
-  * U2 12x2 pin wide (600 mils)
-  * U4 12x2 pin wide (600 mils)
-  * U3 14x2 pin skinny (300 mils)
+  * U1 12x2 pin wide (600 mils) : Row Driver, rowBoB 1
+  * U2 12x2 pin wide (600 mils) : Row Driver, rowBoB 2
+  * U4 12x2 pin wide (600 mils) : Column Driver, 74HC154
+  * U3 14x2 pin skinny (300 mils) : CPU, ATMega
 ----
 *STEP 5*
 
@@ -97,11 +98,11 @@ BUTTONS, RIGHT ANGLED : These buttons pop into place with a small squeeze on the
 
 _Parts_
 
-  * Sw1
-  * Sw2
-  * Sw3
-  * Sw4
-  * Sw5
+  * Sw1 : Inc
+  * Sw2 : Dec
+  * Sw3 : Mode
+  * Sw4 : Reset
+  * Sw5 : Enter
 ----
 *STEP 6*
 
@@ -121,12 +122,12 @@ _Parts_
 ----
 *STEP 8*
 
-POWER LED :  Use any color you like.  A red led is included in the kits.  Polarity matters.  The long lead is the anode, the short lead is the cathode.  The flat side on the silk screen image and LED indicate the
-cathode (short lead).
+LED's :  Use any color you like.  One each of red and Blue LED is included in the kits.  Polarity matters.  The long lead is the anode, the short lead is the cathode.  The flat side on the silk screen image and LED indicate the cathode (short lead).
 
 _Parts_
 
-  * D4
+  * D4 PWR
+  * D2 DBG
 
 
 You can do a mini-smoke test after this LED is installed.  
@@ -141,3 +142,33 @@ RESONATOR, 16 MHz : Polarity does not matter.  This is a small three-pin part in
 _Parts_
 
   * X1
+----
+*STEP 10*
+
+HEADERS and SOCKETS : There are several of these around the board.
+
+_Parts_
+
+  * CD1 : 4 way male header, straight, rtcBoB
+  * CD2 : 4 way male header, straight, rtcBoB
+  * K1 : 3 way male header, straight, PWR_SEL
+  * P7 : 6 way male header, right angle, FTDI
+  * K2 : 3 way male header, straight, LED_ENABLE
+  * R32 : 2 way female socket, straight, LDR
+----
+*STEP 11*
+
+ELECTROLYTIC CAPACITOR : These are polarized capacitors. The negative terminal of the component is marked, and also has a shorter lead.
+
+_Parts_
+
+  * C8, 100uF, 16V / 63V
+----
+*STEP 12*
+
+TRANSISTOR : These are polarized too. You need to spread out the leads to install it.
+
+_Parts_
+
+  * Q17, 2N5401
+----
