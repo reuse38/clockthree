@@ -22,10 +22,10 @@ each step:
   * [photo]
 
 = Tips =
-  * [ Take breaks often.  Fatigue will increase the possibility that you will make a mistake. ]
+  * Take breaks often.  Fatigue will increase the possibility that you will make a mistake.
   * == Soldering: ==
-    * [ We assume that this is NOT your first soldering project.  If it is, we'd suggest getting a cheap learn to solder kit to get started.  If this is your first project in a while, here is a quick refresher on soldering.  The main thing is to double and triple check the part is the is in the correct place with the correct orientation (if applicable).  While de-soldering is possible, it is troublesome and time consuming and risky.  Make it a goal that you will not have to de-solder in the course of making a clock. ]
-    * [ After each step, evaluate the solder joints from the front and back of the board.  On the back, the solder should be shiny and make a volcano shape as opposed to a dome shape. On the front, you should see that the solder came all the way trough the board. If you do make a mistake, don't panic.  Use a solder sucker to remove the solder and pull the piece gingerly while applying heat.  If you damage a trace in the process of de-soldering, send a picture of the damaged area and we will help you make the most of the situation.  It may be possible to "blue wire" around the damage. ]
+    * We assume that this is NOT your first soldering project.  If it is, we'd suggest getting a cheap learn to solder kit to get started.  If this is your first project in a while, here is a quick refresher on soldering.  The main thing is to double and triple check the part is the is in the correct place with the correct orientation (if applicable).  While de-soldering is possible, it is troublesome and time consuming and risky.  Make it a goal that you will not have to de-solder in the course of making a clock.
+    * After each step, evaluate the solder joints from the front and back of the board.  On the back, the solder should be shiny and make a volcano shape as opposed to a dome shape. On the front, you should see that the solder came all the way trough the board. If you do make a mistake, don't panic.  Use a solder sucker to remove the solder and pull the piece gingerly while applying heat.  If you damage a trace in the process of de-soldering, send a picture of the damaged area and we will help you make the most of the situation.  It may be possible to "blue wire" around the damage.
 
 CPU Support:
 Solder the CPU support hardware from lowest profile part to highest.  
@@ -35,10 +35,10 @@ STEP1: Start by soldering the resistors. The orientation (polarity) does not mat
 
 Parts
 R22 10K brown-black-orange
-R31 10K 
-R17 10K 
-R18 10K 
-R19 10K 
+R31 10K
+R17 10K
+R18 10K
+R19 10K
 R23 10K 
 
 R25 1K brown-black-red
