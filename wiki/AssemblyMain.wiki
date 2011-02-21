@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Add your content here.
+Here are the step-by-step instructions for assembling the ClockTHREE.
 
 
 = Details =
@@ -18,7 +18,7 @@ Outline
 each step:
   * [parts]
   * [tools]
-  * [prcedure]
+  * [procedure]
   * [photo]
 
 = Tips =
@@ -54,6 +54,8 @@ Step 2 Diode. The next tallest part is the diode: D1. Orintation does matter on 
 
 D1 1N4148:  This is a fast switching diode for the DBG led.  This diode looks like a browm glass bead with a black strip on one end indicating the cathode.
 Make sure this strip is aligned with the white stripe on the PCB.
+
+D3 1N4007:  This diode is not used when ClockTHREE is powered using the supplied 5V Wall Wart. This was intended as a polarity protection diode in case of a wrongly connected (reverse) input supply. Connect a jumper / zero ohm resistor instead.
 
 Step 3 small caps: These come is two styles, brown ceramic labeled 104 and white plastic labled 1J100.
 Polarity is does not matter on these parts.
