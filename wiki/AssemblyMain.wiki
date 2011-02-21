@@ -16,16 +16,16 @@ Outline
 -------------------------------------------
 
 each step:
-parts
-tools
-prcedure
-photo
+  *parts
+  *tools
+  *prcedure
+  *photo
 
 Tips:
-Take breaks often.  Fatigue will increase the possibility that you will make a 
+  *Take breaks often.  Fatigue will increase the possibility that you will make a 
 mistake.
 
-Soldering: We assume that this is NOT your first soldering project.  If it is,
+  *Soldering: We assume that this is NOT your first soldering project.  If it is,
 we'd suggest getting a cheap learn to solder kit to get started.  If this is 
 your first project in a while, here is a quick refresher on soldering.
 The main thing is to double and triple check the part is the is in the 
