@@ -75,7 +75,7 @@ D3 1N4007:  This diode is not used when ClockTHREE is powered using the supplied
 ----
 *STEP 3*
 
-FTDI Header: This right angle header has a low profile and is easiest to solder before the taller parts are in.
+FTDI Header: This right angle header has a low profile and is easiest to solder before the taller parts are in.  Apply a small amount of solder on each end pin, then check that the plastic is flush against the board, reheating the solder if necessary.  Then go back and solder the middle pins.
 
 _Parts_
   * P7 : 6 way male header, right angle, FTDI
@@ -157,15 +157,18 @@ _Parts_
 ----
 *STEP 11*
 
-HEADERS and SOCKETS : There are several of these around the board.
+HEADERS and SOCKETS : There are several of these around the board.  
 
 _Parts_
 
   * CD1 : 4 way male header, straight, rtcBoB
-  * CD2 : 4 way male header, straight, rtcBoB
+  * CD2 : 4 way male header, straight, rtcBoB  Insert CD1 and CD2 into the female headers on rtcBoB then solder them into place.  This ensures the alignments are copatible.
   * K1 : 3 way male header, straight, PWR_SEL
   * K2 : 3 way male header, straight, LED_ENABLE
   * R32 : 2 way female socket, straight, LDR
+
+After completing K1 (PWR SEL) and K2 (LED_ENABLE), install a jumper on the right two pins of K1 for USB power, and the top two pins of K2, to isolate the LED array for the time being.  We will change both of these arrangements before the clock is complete.
+
 ----
 *STEP 12*
 
@@ -177,7 +180,7 @@ _Parts_
 ----
 *STEP 13*
 
-TRANSISTOR : These are polarized too. You need to spread out the leads to install it.
+TRANSISTOR : Transistors are polarized too. The flat edge of the transistor goes with the flat side of the white silkscreen marking.  Spread out the leads to install it.  Either middle pin can be used.
 
 _Parts_
 
