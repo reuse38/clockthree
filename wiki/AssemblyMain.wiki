@@ -2,24 +2,21 @@
 
 = Introduction =
 
-Here are the step-by-step instructions for assembling the ClockTHREE. The build is divided in to two parts - assembling the CPU support components and assembling the LED array, and finally, assembling the enclosure.
+Here are the step-by-step instructions for assembling the ClockTHREE. The build is divided in to three parts :
 
+  * [Components] - consisting of the CPU support components
+  * [LEDs] - RGB and Mono LEDs
+  * [Enclosure] - Mechanical assembly
 
-= Details =
-
-Outline
-  * [Components]
-  * [LEDs]
-  * [Enclosure]
-
-
--------------------------------------------
+----
 
 each step:
   * parts
   * tools
   * procedure
   * photo
+
+----
 
 = Tips =
   * Take breaks often.  Fatigue will increase the possibility that you will make a mistake.
@@ -32,15 +29,17 @@ each step:
       * P42
       * ISP
       * Proto Area - left out for future experiments
+
+----
  
 =CPU Support (everything but the LED array):=
 Solder the CPU support hardware from lowest profile part to highest.  
 That way when the board is flipped over, the parts are pushed flush against the board.
 
-== STEP1:==
-Start by soldering the resistors. The polarity (orientation) does not matter.
+*STEP 1*
+RESISTORS : Start by soldering the resistors. The polarity (orientation) does not matter.
 
-===Parts===
+_Parts_
 
   * `R22` 10K brown-black-orange
   * `R31` 10K
@@ -54,35 +53,48 @@ Start by soldering the resistors. The polarity (orientation) does not matter.
   * `R21` 4K7
   * `R33` 680 blue-grey-brown
   * `R30` 100 brown-black-brown
-the following
-link points to the [https://lh5.googleusercontent.com/_okbbAZsA5NQ/TWJM6yEXyZI/AAAAAAAAAlk/1xoNw5hwrSw/s912/P2201543.JPG].
+the following link points to the [https://lh5.googleusercontent.com/_okbbAZsA5NQ/TWJM6yEXyZI/AAAAAAAAAlk/1xoNw5hwrSw/s912/P2201543.JPG].
+
+U5 jumper (zero ohm resistor):  There is a spot on the circuit board for a voltage regulator: U5 7805.  Since we use a 5 volt wall wart this part is unnecessary.  You will jumper over this part by soldering in a small wire between pin locations 1 and 3 (the outside holes).  We used a scrap resistor lead.
 
 
-U5 jumper (zero ohm resistor):  There is a spot on the circuit board for a voltage regulator: U5 7805.  Since we use a 5 volt wall wart this part is unnecessary.  You will jumper over this part by soldering in a small wire
-between pin locations 1 and 3 (the outside holes).  We used a scrap resistor lead.
+*STEP 2*
+DIODES : Next, install the diodes. Orientation does matter on these so be careful! The positive lead of a diode is called the anode and the negative lead is called the cathode.  A stripe indicates the cathode lead and must correlate to the stripe on the board.
 
-Step 2 Diode. The next tallest part is the diode: D1. Orintation does matter on these so be careful! The positive lead of a diode is called the anode and the negative lead is called the cathode.  A stripe indicates the cathode lead and must correlate to the stripe on the board.
+_Parts_
 
-D1 1N4148:  This is a fast switching diode for the DBG led.  This diode looks like a browm glass bead with a black strip on one end indicating the cathode.
-Make sure this strip is aligned with the white stripe on the PCB.
+D1 1N4148:  This is a fast switching diode for the DBG led.  This diode looks like a browm glass bead with a black strip on one end indicating the cathode. Make sure this strip is aligned with the white stripe on the PCB.
 
 D3 1N4007:  This diode is not used when ClockTHREE is powered using the supplied 5V Wall Wart. This was intended as a polarity protection diode in case of a wrongly connected (reverse) input supply. Connect a jumper / zero ohm resistor instead.
 
-Step 3 small caps: These come is two styles, brown ceramic labeled 104 and white plastic labled 1J100.
-Polarity is does not matter on these parts.
+
+*STEP 3*
+SMALL CAPACITORS : These come is two styles, brown ceramic labeled 104 and white plastic labeled 1J100.  Polarity does not matter on these parts.
+
+_Parts_
+
   * C3 100nF
   * C6 100nF
   * C7 100nF
   * C9 100nF
 
-Step 4 Sockets:  All of the large ICs have sockets.  This avoids the risk of having to desolder an IC (ick) and also eliminates the possibilty of overheating the IC. Technically speaking polarity does not matter with
-the sockets (although the IC's themselves have polarity). There is however a preferred orienation.  The small notch on one end indicates the pin 1 slot for the IC.  The correct orientation will will reinforce the correct orietation when you insert the IC.
+
+*STEP 4*
+IC SOCKETS :  All of the large ICs have sockets.  This avoids the risk of having to de-solder an IC (ick) and also eliminates the possibility of overheating the IC. Technically speaking polarity does not matter with the sockets (although the IC's themselves have polarity). There is however a preferred orienation.  The small notch on one end indicates the pin 1 slot for the IC.  The correct orientation will reinforce the correct orientation when you insert the IC.
+
+_Parts_
+
   * U1 12x2 pin wide (600 mils)
   * U2 12x2 pin wide (600 mils)
   * U4 12x2 pin wide (600 mils)
   * U3 14x2 pin skinny (300 mils)
 
-Step 5 Right angle buttons: These buttons pop into place with a small squeeze on the back pins.
+
+*STEP 5*
+BUTTONS, RIGHT ANGLED : These buttons pop into place with a small squeeze on the back pins.
+
+_Parts_
+
   * Sw1
   * Sw2
   * Sw3
@@ -90,20 +102,37 @@ Step 5 Right angle buttons: These buttons pop into place with a small squeeze on
   * Sw5
 
 
-Step 6 Speaker: The polarity matters on the speaker.  The plus sign on the speaker must coincide with the plus sign on the board.  The board will accomodate two different speaker pin spacings.  Use the bottom pin and either of the top two pins, whichever is a better fit.
+*STEP 6*
+SPEAKER : The polarity matters on the speaker.  The plus sign on the speaker must coincide with the plus sign on the board.  The board will accommodate two different speaker pin spacings.  Use the bottom pin and either of the top two pins, whichever is a better fit.
+
+_Parts_
+
   * SP1
 
-Step 7 Power Jack: Only fits one way.
+
+*STEP 7*
+POWER JACK : Only fits one way.
+
+_Parts_
   * J1 V_IN
 
-Step 8 Power LED.  Use any color you like.  A red led is included in the kits.  Polarity matters.  The long lead is the anode, the short lead is the cathode.  The flat side on the silk screen image and LED indicate the
-cathode (short lead).  
+
+*STEP 8*
+POWER LED :  Use any color you like.  A red led is included in the kits.  Polarity matters.  The long lead is the anode, the short lead is the cathode.  The flat side on the silk screen image and LED indicate the
+cathode (short lead).
+
+_Parts_
+  * D4
+
+
 You can do a mini-smoke test after this LED is installed.  
 Power up the board by plugging in the wall wart into J1.  The LED should light.  If not check the connectivity of all components in the power LED circuit.
 
 J1+ -> D3 -> U5 jumper -> 'R25' -> D4 -> J1-
 
-Step 8 16 MHz. resonator: Polarity does not matter.  This is a small three-pin part is either blue or brown.  Solder in in either orientation.
-X1
 
-Step 
+*STEP 8*
+RESONATOR, 16 MHz : Polarity does not matter.  This is a small three-pin part in either blue or brown.  Solder in either orientation.
+
+_Parts_
+  * X1
