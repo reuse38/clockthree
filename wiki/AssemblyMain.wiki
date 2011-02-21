@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Here are the step-by-step instructions for assembling the ClockTHREE.
+Here are the step-by-step instructions for assembling the ClockTHREE. The build is divided in to two parts - assembling the CPU support components and assembling the LED array, and finally, assembling the enclosure.
 
 
 = Details =
