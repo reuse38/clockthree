@@ -4,9 +4,9 @@
 
 Here are the step-by-step instructions for assembling the ClockTHREE. The build is divided in to three parts :
 
-  * [Components] - consisting of the CPU support components
-  * [LEDs] - RGB and Mono LEDs
-  * [Enclosure] - Mechanical assembly
+  * 'Components' - consisting of the CPU support components
+  * 'LEDs' - RGB and Mono LEDs
+  * 'Enclosure' - Mechanical assembly
 
 ----
 
@@ -36,7 +36,9 @@ each step:
 Solder the CPU support hardware from lowest profile part to highest.  
 That way when the board is flipped over, the parts are pushed flush against the board.
 
+
 *STEP 1*
+
 RESISTORS : Start by soldering the resistors. The polarity (orientation) does not matter.
 
 _Parts_
@@ -55,10 +57,12 @@ _Parts_
   * `R30` 100 brown-black-brown
 the following link points to the [https://lh5.googleusercontent.com/_okbbAZsA5NQ/TWJM6yEXyZI/AAAAAAAAAlk/1xoNw5hwrSw/s912/P2201543.JPG].
 
+
 U5 jumper (zero ohm resistor):  There is a spot on the circuit board for a voltage regulator: U5 7805.  Since we use a 5 volt wall wart this part is unnecessary.  You will jumper over this part by soldering in a small wire between pin locations 1 and 3 (the outside holes).  We used a scrap resistor lead.
 
 
 *STEP 2*
+
 DIODES : Next, install the diodes. Orientation does matter on these so be careful! The positive lead of a diode is called the anode and the negative lead is called the cathode.  A stripe indicates the cathode lead and must correlate to the stripe on the board.
 
 _Parts_
@@ -69,6 +73,7 @@ D3 1N4007:  This diode is not used when ClockTHREE is powered using the supplied
 
 
 *STEP 3*
+
 SMALL CAPACITORS : These come is two styles, brown ceramic labeled 104 and white plastic labeled 1J100.  Polarity does not matter on these parts.
 
 _Parts_
@@ -80,6 +85,7 @@ _Parts_
 
 
 *STEP 4*
+
 IC SOCKETS :  All of the large ICs have sockets.  This avoids the risk of having to de-solder an IC (ick) and also eliminates the possibility of overheating the IC. Technically speaking polarity does not matter with the sockets (although the IC's themselves have polarity). There is however a preferred orienation.  The small notch on one end indicates the pin 1 slot for the IC.  The correct orientation will reinforce the correct orientation when you insert the IC.
 
 _Parts_
@@ -91,6 +97,7 @@ _Parts_
 
 
 *STEP 5*
+
 BUTTONS, RIGHT ANGLED : These buttons pop into place with a small squeeze on the back pins.
 
 _Parts_
@@ -103,6 +110,7 @@ _Parts_
 
 
 *STEP 6*
+
 SPEAKER : The polarity matters on the speaker.  The plus sign on the speaker must coincide with the plus sign on the board.  The board will accommodate two different speaker pin spacings.  Use the bottom pin and either of the top two pins, whichever is a better fit.
 
 _Parts_
@@ -111,17 +119,21 @@ _Parts_
 
 
 *STEP 7*
+
 POWER JACK : Only fits one way.
 
 _Parts_
+
   * J1 V_IN
 
 
 *STEP 8*
+
 POWER LED :  Use any color you like.  A red led is included in the kits.  Polarity matters.  The long lead is the anode, the short lead is the cathode.  The flat side on the silk screen image and LED indicate the
 cathode (short lead).
 
 _Parts_
+
   * D4
 
 
@@ -132,7 +144,9 @@ J1+ -> D3 -> U5 jumper -> 'R25' -> D4 -> J1-
 
 
 *STEP 8*
+
 RESONATOR, 16 MHz : Polarity does not matter.  This is a small three-pin part in either blue or brown.  Solder in either orientation.
 
 _Parts_
+
   * X1
