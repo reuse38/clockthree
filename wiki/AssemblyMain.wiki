@@ -48,6 +48,9 @@ Start by soldering the resistors. The polarity (orientation) does not matter.
   * `R21` 4K7
   * `R33` 680 blue-grey-brown
   * `R30` 100 brown-black-brown
+the following
+link points to the [http://www.google.com Google home page].
+
 
 U5 jumper (zero ohm resistor):  There is a spot on the circuit board for a voltage regulator: U5 7805.  Since we use a 5 volt wall wart this part is unnecessary.  You will jumper over this part by soldering in a small wire
 between pin locations 1 and 3 (the outside holes).  We used a scrap resistor lead.
