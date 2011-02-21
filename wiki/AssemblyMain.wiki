@@ -79,6 +79,8 @@ FTDI Header: This right angle header has a low profile and is easiest to solder 
 
 _Parts_
   * P7 : 6 way male header, right angle, FTDI
+
+----
  
 *STEP 4*
 
