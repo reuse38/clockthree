@@ -32,6 +32,13 @@ each step:
       * Proto Area - left out for future experiments
 
 ----
+=Gotchas=
+  *The two rowBoB have different orientations.  Please study the pictures before soldering in the dimmer pots.
+  
+  *Take care when soldering the male header pins onto the rowBoBs that the 
+ 
+
+----
  
 =CPU Support (everything but the LED array):=
 Solder the CPU support hardware from lowest profile part to highest.  
@@ -180,9 +187,76 @@ _Parts_
 ----
 *STEP 13*
 
-TRANSISTOR : Transistors are polarized too. The flat edge of the transistor goes with the flat side of the white silkscreen marking.  Spread out the leads to install it.  Either middle pin can be used.
+TRANSISTOR : Transistors are polarized too. The flat edge of the transistor goes with the flat side of the white silkscreen marking.  Spread out the leads to install it.  Either middle pin can be used, but we find the center hole easier to solder to than the offset hole.
 
 _Parts_
 
   * Q17, 2N5401
+
 ----
+
+*STEP 14*
+
+Smoke test
+
+----
+
+*Step 15*
+
+Blink test
+
+----
+=rowBOBs=
+
+*STEP 1*
+
+Solder 100nF cap and 680 Ohm resistor on the bottom of each rowBoB.  The resistor label indicates 470 Ohms.  We have found in testing that 680 Ohms makes a better display and guarantees that the LED are never over driven.  Putting these parts on the bottom leaves a nice clean finish.
+
+_Parts_
+
+  *100nF capacitor 
+  *680 Ohm resistor
+
+----
+
+*STEP 2*
+
+2K Potentiometer
+
+*WARNING*  The the top rowBoB has the reverse orientation as the bottom rowBoB. *WARNING*
+
+Solder the first pot on the left edge.  On on the other rowBoB, solder the pot on the left edge as shown. 
+
+_Parts_
+
+2K pot
+
+----
+
+*STEP 3*
+
+Male header pins.  Insert the pins long side down into the U1 and U2 sockets.  Place the partially completed rowBoB on the pins with the pot facing the left edge of the board.  Solder each rowBoB in place.
+
+_Parts_
+4x 1x12 male header pins 
+
+----
+
+=LED Array=
+
+*STEP 1*
+
+Column resistors.
+
+_Parts_
+
+R1 - R16 100 Ohm resistors
+
+*STEP 2*
+
+_Parts_
+
+Q1 - Q16 2N5401 Transistors.  As with Q17, orientation matters.  The silk screen indicates the correct orientation.  We find that using the middle hole easier than the offset hole.
+
+
+
